@@ -1,0 +1,47 @@
+{
+  "config": {
+    "target": "https://artillery.io",
+    "phases": [
+      {
+        "duration": 60,
+        "arrivalRate": 1
+      }
+    ],
+    "defaults": {
+      "headers": {
+        "x-my-service-auth": "987401838271002188298567"
+      }
+    }
+  },
+  "scenarios": [
+    {
+      "flow": [
+        {
+          "get": {
+            "url": "/docs/"
+          }
+        },
+        {
+          "get": {
+            "url": "/docs/getting-started/"
+          }
+        },
+        {
+          "get": {
+            "url": "/docs/basic-concepts/"
+          }
+        },
+        {
+          "get": {
+            "url": "/docs/script-reference/"
+          }
+        },
+        {
+          "get": {
+            "url": "/docs/http-reference/"
+          }
+        }
+      ]
+    }
+  ]
+}

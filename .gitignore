@@ -27,6 +27,9 @@ build/Release
 node_modules
 jspm_packages
 
+# Development IDE
+.idea
+
 # Optional npm cache directory
 .npm
 
